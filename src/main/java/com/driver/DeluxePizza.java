@@ -7,7 +7,7 @@ boolean isVeg;
     public boolean checkToppings=false;
     public boolean checkTakeaway=false;
     public boolean checkExtraCheese=false;
-
+    public boolean takenCheese=false;
     public DeluxePizza(Boolean isVeg) {
         super(isVeg);
         // your code goes here
@@ -30,18 +30,23 @@ boolean isVeg;
         if(!checkExtraCheese)
             this.price+=80;
         this.checkExtraCheese=true;
+        this.takenCheese=true;
 
     }
 
     public void addExtraToppings(){
         // your code goes here
+        if(!checkToppings){
+            if(!takenCheese){
+                this.price+=80;
+            }
+            if(isVeg)
 
-        if(!checkToppings){ if(isVeg)
-            this.price+=70;
-
-        else
-            this.price+=120;}
+                this.price+=70;
+            else
+                this.price+=120; }
         this.checkToppings=true;
+        takenCheese=true;
     }
 
     public void addTakeaway(){
