@@ -6,10 +6,10 @@ private int price;
         super(isVeg);
         // your code goes here
         if(isVeg){
-           price=(300+80+70);
+          this.price=(300+80+70);
 
         }
-        else price=(300+80+120);
+        else this.price=(300+80+120);
 
 
 

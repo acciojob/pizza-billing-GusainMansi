@@ -5,7 +5,9 @@ public class Pizza {
     private int price;
     private Boolean isVeg;
     private String bill;
-public boolean check=false;
+public boolean checkToppings=false;
+public boolean checkTakeaway=false;
+public boolean checkExtraCheese=false;
     public Pizza(Boolean isVeg){
         this.isVeg = isVeg;
         // your code goes here
@@ -22,23 +24,29 @@ public boolean check=false;
 
     public void addExtraCheese(){
         // your code goes here
+        if(!checkExtraCheese)
         price+=80;
+        checkExtraCheese=true;
+
     }
 
     public void addExtraToppings(){
         // your code goes here
+        if(!checkToppings)
         price+=70;
+        checkToppings=true;
     }
 
     public void addTakeaway(){
         // your code goes here
-        if(!check)
+        if(!checkTakeaway)
         price+=20;
-        check=true;
+        checkTakeaway=true;
     }
 
     public String getBill(){
         // your code goes here
+        bill=Integer.toString(price);
         return this.bill;
     }
 }
