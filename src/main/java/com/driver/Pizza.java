@@ -24,6 +24,7 @@ public boolean checkExtraCheese=false;
 
     public void addExtraCheese(){
         // your code goes here
+
         if(!checkExtraCheese)
         this.price+=80;
         this.checkExtraCheese=true;
@@ -32,8 +33,11 @@ public boolean checkExtraCheese=false;
 
     public void addExtraToppings(){
         // your code goes here
-        if(!checkToppings)
-        this.price+=70;
+        if(!checkToppings){ if(isVeg)
+            this.price+=70;
+
+        else
+        this.price+=120;}
         this.checkToppings=true;
     }
 
