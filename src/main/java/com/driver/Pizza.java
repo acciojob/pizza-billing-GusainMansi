@@ -12,9 +12,9 @@ public boolean checkExtraCheese=false;
         this.isVeg = isVeg;
         // your code goes here
         if(isVeg){
-            price=300;
+            this.price=300;
         }
-        else price=400;
+        else this.price=400;
 
     }
 
@@ -25,28 +25,28 @@ public boolean checkExtraCheese=false;
     public void addExtraCheese(){
         // your code goes here
         if(!checkExtraCheese)
-        price+=80;
-        checkExtraCheese=true;
+        this.price+=80;
+        this.checkExtraCheese=true;
 
     }
 
     public void addExtraToppings(){
         // your code goes here
         if(!checkToppings)
-        price+=70;
-        checkToppings=true;
+        this.price+=70;
+        this.checkToppings=true;
     }
 
     public void addTakeaway(){
         // your code goes here
         if(!checkTakeaway)
-        price+=20;
-        checkTakeaway=true;
+        this.price+=20;
+        this.checkTakeaway=true;
     }
 
     public String getBill(){
         // your code goes here
-        bill=Integer.toString(price);
+        this.bill=Integer.toString(price);
         return this.bill;
     }
 }
