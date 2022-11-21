@@ -8,6 +8,7 @@ public class Pizza {
 public boolean checkToppings=false;
 public boolean checkTakeaway=false;
 public boolean checkExtraCheese=false;
+public boolean takenCheese=false;
     public Pizza(Boolean isVeg){
         this.isVeg = isVeg;
         // your code goes here
@@ -28,16 +29,24 @@ public boolean checkExtraCheese=false;
         if(!checkExtraCheese)
         this.price+=80;
         this.checkExtraCheese=true;
+        this.takenCheese=true;
 
     }
 
     public void addExtraToppings(){
         // your code goes here
-        if(!checkToppings){ if(isVeg)
-            this.price+=70;
+        if(!checkToppings){
+            if(isVeg)
+        {
+            if(!takenCheese) {this.price+=80;}
+                this.price+=70;
 
-        else
-        this.price+=120;}
+        }}
+
+
+        else{
+            if(!takenCheese) this.price+=80;
+        this.price+=120; }
         this.checkToppings=true;
     }
 
