@@ -36,18 +36,16 @@ public boolean takenCheese=false;
     public void addExtraToppings(){
         // your code goes here
         if(!checkToppings){
+            if(!takenCheese){
+                this.price+=80;
+            }
             if(isVeg)
-        {
-            if(!takenCheese) {this.price+=80;}
+
                 this.price+=70;
-
-        }}
-
-
-        else{
-            if(!takenCheese) this.price+=80;
+            else
         this.price+=120; }
         this.checkToppings=true;
+        takenCheese=true;
     }
 
     public void addTakeaway(){

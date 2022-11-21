@@ -13,9 +13,9 @@ boolean isVeg;
         // your code goes here
           this.price= super.getPrice();
         if(isVeg){
-            this.price+=80+70;
+            this.price+=150;
         }
-        else this.price+=80+120;
+        else this.price+=200;
 
 
     }
