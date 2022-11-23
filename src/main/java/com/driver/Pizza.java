@@ -13,9 +13,9 @@ public boolean takenCheese=false;
         this.isVeg = isVeg;
         // your code goes here
         if(isVeg){
-            this.price=300;
+            price=300;
         }
-        else this.price=400;
+        else price=400;
 
     }
 

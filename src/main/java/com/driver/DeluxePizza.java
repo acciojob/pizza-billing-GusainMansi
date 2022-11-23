@@ -3,11 +3,9 @@ package com.driver;
 public class DeluxePizza extends Pizza {
 private int price;
 private String bill;
-boolean isVeg;
-    public boolean checkToppings=false;
     public boolean checkTakeaway=false;
-    public boolean checkExtraCheese=false;
-    public boolean takenCheese=false;
+
+boolean isVeg;
     public DeluxePizza(Boolean isVeg) {
         super(isVeg);
         // your code goes here
@@ -27,26 +25,11 @@ boolean isVeg;
     public void addExtraCheese(){
         // your code goes here
 
-        if(!checkExtraCheese)
-            this.price+=80;
-        this.checkExtraCheese=true;
-        this.takenCheese=true;
 
     }
 
     public void addExtraToppings(){
-        // your code goes here
-        if(!checkToppings){
-            if(!takenCheese){
-                this.price+=80;
-            }
-            if(isVeg)
-
-                this.price+=70;
-            else
-                this.price+=120; }
-        this.checkToppings=true;
-        takenCheese=true;
+        // your code goes
     }
 
     public void addTakeaway(){
