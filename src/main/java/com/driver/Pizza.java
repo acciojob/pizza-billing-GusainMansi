@@ -63,6 +63,8 @@ this.bill="Base Price of the Pizza: "
     }
 
     public String getBill(){
+        if(isBillGenerated==false){
+            isBillGenerated=true;
         // your code goes here
         if(isToppingAdded==true){
             this.bill=this.bill+"Extra Toppings Added: "+this.extraToppingPrice +"\n";
@@ -74,7 +76,12 @@ this.bill="Base Price of the Pizza: "
             this.bill=this.bill+"Takeaway Added: "+this.takeAwayPrice + "\n";
         }
         this.bill=this.bill+"Total Price: "+this.price+"\n";
-        return this.bill;
-    }
 
-}
+
+
+
+
+    } return this.bill;
+    }}
+
+
