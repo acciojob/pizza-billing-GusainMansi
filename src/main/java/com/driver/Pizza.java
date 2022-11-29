@@ -28,7 +28,7 @@ private boolean isBillGenerated;
         }
         else {this.price=400;
         this.extraToppingPrice=120;}
-this.bill="Base Price of the Pizza: "
+this.bill= "Base Price of the Pizza: "
 +this.price + "\n";    }
 
 
