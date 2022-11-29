@@ -66,12 +66,13 @@ this.bill= "Base Price of the Pizza: "
         if(isBillGenerated==false){
             isBillGenerated=true;
         // your code goes here
+            if(isCheeseAdded==true){
+                this.bill=this.bill+"Extra Cheese Added: "+this.extraCheesePrice +"\n";
+            }
         if(isToppingAdded==true){
             this.bill=this.bill+"Extra Toppings Added: "+this.extraToppingPrice +"\n";
         }
-        if(isCheeseAdded==true){
-            this.bill=this.bill+"Extra Cheese Added: "+this.extraCheesePrice +"\n";
-        }
+
         if(isTakeAwayAdded==true){
             this.bill=this.bill+"Paper bag Added: "+this.takeAwayPrice + "\n";
         }
