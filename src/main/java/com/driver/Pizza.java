@@ -73,7 +73,7 @@ this.bill= "Base Price of the Pizza: "
             this.bill=this.bill+"Extra Cheese Added: "+this.extraCheesePrice +"\n";
         }
         if(isTakeAwayAdded==true){
-            this.bill=this.bill+"Paper-bag Added: "+this.takeAwayPrice + "\n";
+            this.bill=this.bill+"Paper bag Added: "+this.takeAwayPrice + "\n";
         }
         this.bill=this.bill+"Total Price: "+this.price+"\n";
 
