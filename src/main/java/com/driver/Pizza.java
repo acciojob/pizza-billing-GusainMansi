@@ -28,7 +28,7 @@ private boolean isBillGenerated;
         }
         else {this.price=400;
         this.extraToppingPrice=120;}
-this.bill= "Base Price of the Pizza: "
+this.bill= "Base Price Of The Pizza: "
 +this.price + "\n";    }
 
 
@@ -74,7 +74,7 @@ this.bill= "Base Price of the Pizza: "
         }
 
         if(isTakeAwayAdded==true){
-            this.bill=this.bill+"Paper bag Added: "+this.takeAwayPrice + "\n";
+            this.bill=this.bill+"Paperbag Added: "+this.takeAwayPrice + "\n";
         }
         this.bill=this.bill+"Total Price: "+this.price+"\n";
 
